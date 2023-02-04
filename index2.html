@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+			.sceth {
+			height: 300px;
+			width: 200px;
+		}
+		.tex {
+		}
+		.tex2 {
+		}
+		.pre {
+			width: 100px;
+			position: absolute;
+		}
+		.pre2 {
+			width: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body style="background-size: cover; background-image: URL(Безмятежность.png);">
+	<div>
+		<h1>СИЛА:</h1>
+		<h1 class="sceth">0</h1>
+	    <h2 class="tex">Rock</h2>
+	    <h2 class="tex2">Honk</h2>
+	</div>
+	<img src="download.jpg" class="pre" style="top: 807px; left: 734px;">
+	<img src="ss13-clown.png" class="pre2" style="top: 207px; left: 834px;">
+<img src="download.jpg" style="display:none" class="win">
+	<script type="text/javascript"> 
+		let number = 1;  
+    document.querySelector('.pre').onclick = function() {
+    document.querySelector('.sceth').innerHTML=number
+	number=number+1; 
+    alert("вы съели rock");
+    if(score==2)
+	document.querySelector('.tex2').style.textDecoration="line-through"
+	document.querySelector('.pre').style.display="none"
+} 
+    document.querySelector('.pre2').onclick = function() {
+    document.querySelector('.sceth').innerHTML=number
+	number=number+1; 
+    alert("вы убили клоуна");
+    if(score==2)
+	document.querySelector('.tex2').style.textDecoration="line-through"
+	document.querySelector('.pre2').style.display="none"
+}
+
+if(score==0) {
+document.querySelector(".Безмятежность.png").style.display = "none";
+document.querySelector(".win").style.display = "block"
+}
+	</script>
+
+</body>
+</html>
+
